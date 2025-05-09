@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+    <h2>JavaScript Alert Box</h2>
+    <br>
+    <button onclick="myfunction()">Click Me</button>
+    <br><hr>
+    <button onclick="myfunction1()">Try It</button>
+    <hr>
+    <button id="" onclick="getalert();">Click Me</button>
+    <hr>
+    <button id="" onclick="getalert1();">Click Me</button>
+    <span id="result">Result Here</span>
+    <hr>
+    <button onclick ="myfunction2()">Try It</button>
+    <p id="demo"></p>
+    <hr>
+
+    <div class="form">
+        <form action="#">
+         <label for="form">Enter Value: </label>
+         <input type="number" id="form" value="10">
+        <br> <br>
+        <label for="form1">Enter Value: </label>
+         <input type="number" id="form1" value="10">
+       <br><br>
+         <button id="btn-6">Calculate</button>
+         <p id="p1">Result Multiplication: </p>
+         <p id="p2"> Result Adding: </p>
+         <p id="p3">Result Subtraction: </p>
+         <p id="p4"> Result Division: </p>
+        </form>
+    </div>
+    <hr>
+    <div id="table1">
+        <table border="2">
+            <tr>
+                <th>
+                    s.no
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                   Email Id
+                </th>
+                <th>
+                    Course
+                </th>
+                <th>
+                    Actions
+                </th>
+                </tr>
+        <tr id="r1">
+            <td>
+                01
+            </td>
+            <td>
+                VenkataLakshmi
+            </td>
+            <td>
+                venkatalakshmi408@gmail.com
+            </td>
+            <td>
+                ui/ux
+            </td>
+            <td>
+                <button onclick="vision('r1')">
+                    delete
+                </button>
+            </td>
+        </tr>
+        <tr id="r2">
+            <td>
+                02
+            </td>
+            <td>
+                swetha 
+            </td>
+            <td>
+                swethamanta@gmail.com
+            </td>
+            <td>
+                ui/ux
+            </td>
+            <td>
+                <button onclick="vision('r2')">
+                    delete
+                </button>
+            </td>
+        </tr>
+        <tr id="r3">
+            <td>
+                03
+            </td>
+            <td>
+               prasanna
+            </td>
+            <td>
+                lakshmiprasanna@gmail.com
+            </td>
+            <td>
+                ui/ux
+            </td>
+            <td>
+                <button  onclick="vision('r3')">
+                    delete
+                </button>
+            </td>
+        </tr>
+
+        </table>
+    </div>
+    <hr>
+    <div>
+        <img src="1.webp" alt="img1" id="img1" onmouseover="imgZoom()" onmouseleave="imgOut()">
+    </div>
+    <hr>
+    <div>
+        <p>Get Complete Details about String Methods</p>
+        <textarea id="txt-box"></textarea>
+        <p id="p9">Text Count: </p>
+        <p id="p10">Word Count: </p>
+        <p id="p11">Capital Letter: </p>
+        <p id="p12">Lower Letter: </p>
+    </div>
+    <hr>
+
+    <div class="parent">
+    <label>Name: </label>
+    <input type="text" id="inp" style="width: 300px;">
+    <button id="btn-9">Add New Row</button>
+    <button id="btn-10">Reset</button>
+    </div>
+    <hr>
+    <a href=""onclick="LoginPage();">Get Pop Up</a>
+    <hr>
+    <div>
+        <p id="p13">BirthDay Person Name: </p>
+        <button id="btn-11" onclick="getDate();">Date Details</button>
+    </div>
+    <hr>
+    <input type="password" id="password" oninput="checkStrength()" placeholder="Enter password">
+    <div id="strength-bar">
+    <div id="strength-fill">
+    </div>
+    </div>
+    <p id="result"></p>
+    <hr>
+    <div>
+        <marquee scrollamount="40" id="marque" direction="right" onmouseover="imgScrollStop();" onmouseleave="imgScrollStart()">
+            <img src="2.jpeg"  height="200px">
+            <img src="upsc.jpg"  height="200px">
+        </marquee>
+    </div>
+    <hr>
+    </div>
+    <script>
+    function getalert()
+    {
+        alert("Welcome to JavaScript");
+    }
+    </script>
+    <form method="post" enctype="multipart/form-data" action="">
+        <ul>
+            <li>
+                <label for="fname" class="required">Product Names</label>
+                <input type="text" onblur="return validate1()" required="" name="pr_name" id="pr_name" value="" class="text jsid_3">
+                <span style="color: red" id="pr_name_result"></span>
+            </li><br>
+            <li>
+                <label for="fname" class="required">Product Image</label>
+                <input type="file" onblur="validate1()" required="" name="pr_img" value="" id="pr_img" class="text jsid_4">
+                <span style="color:red" id="pr_img_result"></span>
+            </li><br>
+            <li>
+                <label for="Email" class="required">Number</label>
+                <input type="text" onblur="validate1()" required="" name="pr_cost" id="pr_cost" value="" class="text jsid_5">
+                <span style="color:red" id="pr_cost_result"></span>
+            </li><br>
+        </ul>
+    </form>
+    <hr>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Tab1')">Tab1<button>
+            <button class="tablinks" onclick="openCity(event, 'Tab2')">Tab2<button>
+            <button class="tablinks" onclick="openCity(event, 'Tab3')">Tab3<button>
+          </div>
+          <hr>
+          <div class="scroll-container">
+            <img src="1.webp" alt="doramon" width="600" height="400">
+            <img src="2.jpeg" alt="upsc" width="600" height="400">
+            <img src="upsc.jpg" alt="upsc" width="600" height="400">
+          </div>
+    <script src="js1.js"></script>
+</body>
+</html>
